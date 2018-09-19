@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scene.meta~HEAD.meta~HEAD.meta
+guid: a0bc1a78ffa43e44ab6221bdff953641
+=======
 guid: 44787878d47753a4080b77bce9a5f5a6
+>>>>>>> 7a0764390977de419f284e111773cd8d7f0022a8:Assets/Scene.meta~HEAD.meta~HEAD.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
