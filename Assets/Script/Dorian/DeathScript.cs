@@ -8,12 +8,14 @@ public class DeathScript : MonoBehaviour {
     public GameObject MenuDeFin;
     public bool StateOver;
 
+    /// Si l'objet qui touche le collider a le tag player, il se fait détruire
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
             Destroy(other.GetComponement<GameObject>);
     }
 
+    /// Si la scène ne contient pas d'objet avec un tag player, le jeu passe en état de fin
     void FixedUpdate()
     {
         Gameobjects = GameObject.FindGameObjectsWithTag("Player");
