@@ -10,7 +10,8 @@ public class DeathScript : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        Destroy(other.GetComponement<GameObject>);
+        if (other.tag == "Player")
+            Destroy(other.GetComponement<GameObject>);
     }
 
     void FixedUpdate()
