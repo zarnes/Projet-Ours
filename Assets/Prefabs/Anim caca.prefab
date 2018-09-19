@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61759248291094360}
   - component: {fileID: 111340971042550730}
   m_Layer: 0
-  m_Name: Caca_23
+  m_Name: Anim caca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

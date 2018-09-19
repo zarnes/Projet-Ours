@@ -12,6 +12,12 @@ TextureImporter:
     21300014: GlobuleBlanc_7
     21300016: GlobuleBlanc_8
     21300018: GlobuleBlanc_9
+    21300020: GlobuleBlanc_10
+    21300022: GlobuleBlanc_11
+    21300024: GlobuleBlanc_16
+    21300026: GlobuleBlanc_14
+    21300028: GlobuleBlanc_12
+    21300030: GlobuleBlanc_13
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -97,10 +103,10 @@ TextureImporter:
       name: GlobuleBlanc_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 885
-        width: 127
-        height: 139
+        x: 31
+        y: 1788
+        width: 217
+        height: 239
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,7 +114,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b71136ec16682c44aa749f5a512955ab
+      spriteID: 7f5529d744856e949a5b8b3eef26a258
       vertices: []
       indices: 
       edges: []
@@ -117,10 +123,10 @@ TextureImporter:
       name: GlobuleBlanc_1
       rect:
         serializedVersion: 2
-        x: 12
-        y: 741
-        width: 104
-        height: 132
+        x: 53
+        y: 1503
+        width: 176
+        height: 226
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,7 +134,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae4c08c97d1ef6b4dbe49e3d3be3a511
+      spriteID: ef8939bdd8cf0e84f8c5c3eebdcfeaf6
       vertices: []
       indices: 
       edges: []
@@ -137,10 +143,10 @@ TextureImporter:
       name: GlobuleBlanc_2
       rect:
         serializedVersion: 2
-        x: 165
-        y: 739
-        width: 97
-        height: 137
+        x: 315
+        y: 1494
+        width: 166
+        height: 235
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,7 +154,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43a134713ed05e143a1f9844135783c8
+      spriteID: bc9dc70be9d2527449954da5c09cffe9
       vertices: []
       indices: 
       edges: []
@@ -157,10 +163,10 @@ TextureImporter:
       name: GlobuleBlanc_3
       rect:
         serializedVersion: 2
-        x: 308
-        y: 740
-        width: 100
-        height: 135
+        x: 615
+        y: 1495
+        width: 170
+        height: 232
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,7 +174,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec18fe307fd2a314abcef28c1e0f5307
+      spriteID: 5095b37692f256445a5c3c467bc35c28
       vertices: []
       indices: 
       edges: []
@@ -177,10 +183,10 @@ TextureImporter:
       name: GlobuleBlanc_4
       rect:
         serializedVersion: 2
-        x: 450
-        y: 740
-        width: 104
-        height: 135
+        x: 896
+        y: 1501
+        width: 178
+        height: 233
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,7 +194,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97aef51c53399d14f840fadff5622cad
+      spriteID: f30be2fbac6db6f418d3636a22fa13c4
       vertices: []
       indices: 
       edges: []
@@ -197,10 +203,10 @@ TextureImporter:
       name: GlobuleBlanc_5
       rect:
         serializedVersion: 2
-        x: 9
-        y: 598
-        width: 127
-        height: 136
+        x: 1201
+        y: 1495
+        width: 191
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,7 +214,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0cdf3224f5f8fa4cbd0a566a8cd2631
+      spriteID: 8a1417ad1eb0dcc42a4f5756112f4aee
       vertices: []
       indices: 
       edges: []
@@ -217,10 +223,10 @@ TextureImporter:
       name: GlobuleBlanc_6
       rect:
         serializedVersion: 2
-        x: 148
-        y: 597
-        width: 149
-        height: 138
+        x: 33
+        y: 1216
+        width: 218
+        height: 236
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,7 +234,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55aaaa643ff7c824aaf5538cd0ff6e03
+      spriteID: 7ac80dede33f5ea47bfb84d4eac06214
       vertices: []
       indices: 
       edges: []
@@ -237,10 +243,10 @@ TextureImporter:
       name: GlobuleBlanc_7
       rect:
         serializedVersion: 2
-        x: 296
-        y: 599
-        width: 146
-        height: 134
+        x: 301
+        y: 1216
+        width: 258
+        height: 238
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,7 +254,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a11e016952a30e4382c6ffffd8fddf8
+      spriteID: d2f42e7823e1cab43bdfc88c0927217f
       vertices: []
       indices: 
       edges: []
@@ -257,10 +263,10 @@ TextureImporter:
       name: GlobuleBlanc_8
       rect:
         serializedVersion: 2
-        x: 450
-        y: 600
-        width: 130
-        height: 132
+        x: 603
+        y: 1216
+        width: 250
+        height: 231
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,7 +274,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d857e861cc1c6484f954d39f2a1f5916
+      spriteID: 920b428de970f884dbf40f2c0a191f81
       vertices: []
       indices: 
       edges: []
@@ -277,10 +283,10 @@ TextureImporter:
       name: GlobuleBlanc_9
       rect:
         serializedVersion: 2
-        x: 595
-        y: 600
-        width: 125
-        height: 132
+        x: 896
+        y: 1221
+        width: 225
+        height: 227
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,7 +294,127 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66112e07b5c78e1468adbbc89c7c809f
+      spriteID: e44c6a82d2136194e83616caf3305fd1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlobuleBlanc_10
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 1229
+        width: 218
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75294ab03c884048aefffabb21b5f50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlobuleBlanc_11
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1218
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219c8b752cbb5ec468703c62bd96ecf6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlobuleBlanc_16
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 891
+        width: 283
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 5, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792aa98d7a5119d4aa49478870976745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlobuleBlanc_14
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 891
+        width: 277
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5edb13a4e33d44b87c93449c3777c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlobuleBlanc_12
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 897
+        width: 277
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0e176e904a7a0408822a1aed91df50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlobuleBlanc_13
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 903
+        width: 277
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e416ee9c7ea66b240809ff14195c65ee
       vertices: []
       indices: 
       edges: []
