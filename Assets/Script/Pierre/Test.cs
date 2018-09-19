@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Test : MonoBehaviour {
     Rigidbody2D rb;
+    float maxSpeed=6;
     // Use this for initialization
+
     void Start () {
         rb = transform.GetComponent<Rigidbody2D>();
     }
@@ -13,8 +15,11 @@ public class Test : MonoBehaviour {
 	void Update () {
         float ySpeed = rb.velocity.y;
         float xSpeed = rb.velocity.x;
-        if (Input.GetKey(KeyCode.LeftArrow)) rb.velocity = new Vector2(xSpeed-0.3f, 0);
-        if (Input.GetKey(KeyCode.RightArrow)) rb.velocity = new Vector2(xSpeed+0.3f,0);
-        if (Input.GetKeyUp(KeyCode.LeftArrow) && rb.velocity == new Vector2( 0, 0)) rb.velocity = new Vector2(xSpeed - 0.1f, 0);
+
+        if (Input.GetKey(KeyCode.LeftArrow)&&xSpeed>-maxSpeed) rb.velocity = new Vector2(xSpeed-0.4f, ySpeed);
+        if (Input.GetKey(KeyCode.RightArrow)&&xSpeed<maxSpeed) rb.velocity = new Vector2(xSpeed+0.4f,ySpeed);
+
+        if (Input.GetKey(KeyCode.DownArrow) && ySpeed > -maxSpeed) rb.velocity = new Vector2(xSpeed, ySpeed - 0.4f);
+        if (Input.GetKey(KeyCode.UpArrow) && ySpeed > -maxSpeed) rb.velocity = new Vector2(xSpeed, ySpeed + 0.4f);
     }
 }
