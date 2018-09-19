@@ -14,34 +14,43 @@ public class Buoyancy : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        foreach (KeyValuePair<Transform, float> entity in _entities)
+        List<Transform> entitiesKeys = new List<Transform>(_entities.Keys);
+        foreach (Transform entityKey in entitiesKeys)
         {
-            entity.Key.Translate(direction * entity.Value * Time.deltaTime);
-            _entities[entity.Key] += Acceleration * Time.deltaTime;
+            float speed = _entities[entityKey];
+
+            Vector3 translate = direction * speed * Time.deltaTime;
+            entityKey.Translate(translate);
+
+            if (speed != MaxSpeed)
+            {
+                speed += Acceleration * Time.deltaTime;
+                if (speed > MaxSpeed)
+                    speed = MaxSpeed;
+
+                _entities[entityKey] = speed;
+            }
         }
 	}
-
+    
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.name + " entering");
         // If already exist
         if (_entities.ContainsKey(other.transform))
         {
-            Debug.LogWarning(other.name + " is trying to enter buoyancy zone but is already in.");
+            Debug.LogWarning(other.transform.name + " is trying to enter buoyancy zone but is already in.");
             return;
         }
 
-        _entities.Add(transform, MinSpeed);
+        _entities.Add(other.transform, MinSpeed);
     }
 
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log(other.name + " leaving");
-
         // If object not found
-        if (_entities.ContainsKey(other.transform))
+        if (!_entities.ContainsKey(other.transform))
         {
-            Debug.LogWarning(other.name + " is trying to leave buoyency zone but is not inside it.");
+            Debug.LogWarning(other.transform.name + " is trying to leave buoyency zone but is not inside it.");
             return;
         }
 
