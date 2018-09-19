@@ -10,7 +10,7 @@ public class DeathScript : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        Collider.GetComponement<GameObject>
+        //Collider.GetComponement<GameObject>;
     }
 
     void FixedUpdate()

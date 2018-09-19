@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Move : MonoBehaviour {
-    bool verticalTranslation_active;
-    bool horizontalTranslation_active;
     float speed = 0.2f;
+    Rigidbody2D rb;
+
 
     // Use this for initialization
     void Start()
     {
-
+        rb = this.transform.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
