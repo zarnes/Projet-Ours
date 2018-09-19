@@ -1,0 +1,518 @@
+fileFormatVersion: 2
+guid: d96d7d229a22c3f42b463a0276ce0014
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: GlobuleBlanc_0
+    21300002: GlobuleBlanc_1
+    21300004: GlobuleBlanc_2
+    21300006: GlobuleBlanc_3
+    21300008: GlobuleBlanc_4
+    21300010: GlobuleBlanc_5
+    21300012: GlobuleBlanc_6
+    21300014: GlobuleBlanc_7
+    21300016: GlobuleBlanc_8
+    21300018: GlobuleBlanc_9
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GlobuleBlanc_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 885
+        width: 127
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71136ec16682c44aa749f5a512955ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlobuleBlanc_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 741
+        width: 104
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4c08c97d1ef6b4dbe49e3d3be3a511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlobuleBlanc_2
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 739
+        width: 97
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a134713ed05e143a1f9844135783c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlobuleBlanc_3
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 740
+        width: 100
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec18fe307fd2a314abcef28c1e0f5307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlobuleBlanc_4
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 740
+        width: 104
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97aef51c53399d14f840fadff5622cad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlobuleBlanc_5
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 598
+        width: 127
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0cdf3224f5f8fa4cbd0a566a8cd2631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlobuleBlanc_6
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 597
+        width: 149
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55aaaa643ff7c824aaf5538cd0ff6e03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlobuleBlanc_7
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 599
+        width: 146
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a11e016952a30e4382c6ffffd8fddf8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlobuleBlanc_8
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 600
+        width: 130
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d857e861cc1c6484f954d39f2a1f5916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlobuleBlanc_9
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 600
+        width: 125
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66112e07b5c78e1468adbbc89c7c809f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -349, y: 225}
+      - {x: -366, y: 217}
+      - {x: -366, y: 113}
+      - {x: -357, y: 83}
+      - {x: -213, y: 83}
+      - {x: -213, y: 185}
+      - {x: -227, y: 225}
+    - - {x: -491, y: 224}
+      - {x: -505, y: 220}
+      - {x: -505, y: 89}
+      - {x: -502, y: 84}
+      - {x: -374, y: 84}
+      - {x: -374, y: 223}
+      - {x: -375, y: 224}
+    - - {x: -363, y: 88}
+      - {x: -363, y: 86}
+      - {x: -362, y: 84}
+      - {x: -359, y: 84}
+      - {x: -354, y: 87}
+      - {x: -354, y: 91}
+      - {x: -356, y: 93}
+      - {x: -358, y: 93}
+    - - {x: -204, y: 223}
+      - {x: -218, y: 218}
+      - {x: -218, y: 92}
+      - {x: -168, y: 85}
+      - {x: -68, y: 85}
+      - {x: -68, y: 209}
+      - {x: -73, y: 223}
+    - - {x: -39, y: 222}
+      - {x: -64, y: 201}
+      - {x: -64, y: 124}
+      - {x: -32, y: 86}
+      - {x: 41, y: 86}
+      - {x: 70, y: 93}
+      - {x: 70, y: 218}
+      - {x: 44, y: 222}
+    - - {x: 210, y: 207}
+      - {x: 187, y: 222}
+      - {x: 98, y: 222}
+      - {x: 81, y: 206}
+      - {x: 81, y: 86}
+      - {x: 148, y: 86}
+      - {x: 193, y: 104}
+      - {x: 207, y: 123}
+      - {x: 210, y: 129}
+    - - {x: -107, y: 148}
+      - {x: -106, y: 149}
+      - {x: -107, y: 148}
+      - {x: -107, y: 144}
+    - - {x: 8, y: 152}
+      - {x: 11, y: 164}
+      - {x: 29, y: 151}
+      - {x: 14, y: 132}
+    - - {x: 170, y: 151}
+      - {x: 172, y: 153}
+      - {x: 171, y: 159}
+      - {x: 170, y: 147}
+    - - {x: -267, y: 366}
+      - {x: -349, y: 366}
+      - {x: -349, y: 225}
+      - {x: -271, y: 225}
+      - {x: -248, y: 245}
+      - {x: -248, y: 343}
+      - {x: -252, y: 353}
+    - - {x: -132, y: 365}
+      - {x: -167, y: 365}
+      - {x: -173, y: 364}
+      - {x: -193, y: 359}
+      - {x: -206, y: 349}
+      - {x: -206, y: 281}
+      - {x: -185, y: 226}
+      - {x: -128, y: 226}
+      - {x: -119, y: 230}
+      - {x: -102, y: 256}
+      - {x: -102, y: 340}
+      - {x: -104, y: 358}
+    - - {x: 20, y: 365}
+      - {x: -29, y: 365}
+      - {x: -51, y: 361}
+      - {x: -64, y: 352}
+      - {x: -64, y: 226}
+      - {x: 39, y: 226}
+      - {x: 39, y: 229}
+      - {x: 44, y: 254}
+      - {x: 44, y: 357}
+    - - {x: -416, y: 363}
+      - {x: -494, y: 363}
+      - {x: -502, y: 356}
+      - {x: -502, y: 252}
+      - {x: -498, y: 234}
+      - {x: -480, y: 227}
+      - {x: -416, y: 227}
+      - {x: -394, y: 258}
+      - {x: -394, y: 360}
+    - - {x: -490, y: 512}
+      - {x: -512, y: 464}
+      - {x: -512, y: 385}
+      - {x: -500, y: 374}
+      - {x: -497, y: 371}
+      - {x: -426, y: 371}
+      - {x: -383, y: 388}
+      - {x: -383, y: 509}
+      - {x: -391, y: 512}
+    physicsShape:
+    - - {x: -342, y: 225}
+      - {x: -366, y: 202}
+      - {x: -366, y: 118}
+      - {x: -351, y: 83}
+      - {x: -213, y: 83}
+      - {x: -213, y: 192}
+      - {x: -224, y: 225}
+    - - {x: -505, y: 224}
+      - {x: -505, y: 117}
+      - {x: -486, y: 84}
+      - {x: -377, y: 84}
+      - {x: -375, y: 88}
+      - {x: -375, y: 179}
+      - {x: -389, y: 224}
+    - - {x: -90, y: 155}
+      - {x: -105, y: 147}
+      - {x: -70, y: 167}
+      - {x: -68, y: 178}
+      - {x: -68, y: 185}
+      - {x: -83, y: 219}
+      - {x: -103, y: 223}
+      - {x: -185, y: 223}
+      - {x: -217, y: 193}
+      - {x: -217, y: 102}
+      - {x: -184, y: 85}
+      - {x: -70, y: 85}
+      - {x: -68, y: 90}
+      - {x: -68, y: 132}
+      - {x: -71, y: 146}
+    - - {x: -64, y: 222}
+      - {x: -64, y: 99}
+      - {x: -15, y: 86}
+      - {x: 36, y: 86}
+      - {x: 70, y: 101}
+      - {x: 70, y: 215}
+      - {x: 41, y: 222}
+    - - {x: 81, y: 113}
+      - {x: 86, y: 88}
+      - {x: 90, y: 86}
+      - {x: 156, y: 86}
+      - {x: 210, y: 109}
+      - {x: 210, y: 205}
+      - {x: 205, y: 222}
+      - {x: 119, y: 222}
+      - {x: 81, y: 190}
+    - - {x: 11, y: 132}
+      - {x: 6, y: 160}
+      - {x: 32, y: 144}
+      - {x: 25, y: 130}
+    - - {x: 171, y: 154}
+      - {x: 171, y: 163}
+      - {x: 170, y: 152}
+      - {x: 170, y: 150}
+    - - {x: -278, y: 203}
+      - {x: -277, y: 201}
+      - {x: -273, y: 199}
+      - {x: -273, y: 200}
+    - - {x: -266, y: 212}
+      - {x: -267, y: 210}
+      - {x: -266, y: 205}
+      - {x: -259, y: 198}
+      - {x: -257, y: 201}
+    - - {x: -329, y: 366}
+      - {x: -349, y: 356}
+      - {x: -349, y: 269}
+      - {x: -348, y: 255}
+      - {x: -339, y: 225}
+      - {x: -268, y: 225}
+      - {x: -248, y: 231}
+      - {x: -248, y: 366}
+    - - {x: -206, y: 365}
+      - {x: -206, y: 270}
+      - {x: -187, y: 226}
+      - {x: -109, y: 226}
+      - {x: -102, y: 251}
+      - {x: -102, y: 359}
+      - {x: -123, y: 365}
+    - - {x: 18, y: 365}
+      - {x: -21, y: 365}
+      - {x: -51, y: 355}
+      - {x: -57, y: 337}
+      - {x: -48, y: 328}
+      - {x: -64, y: 264}
+      - {x: -64, y: 226}
+      - {x: -8, y: 226}
+      - {x: 31, y: 233}
+      - {x: 44, y: 258}
+      - {x: 44, y: 335}
+      - {x: 41, y: 359}
+    - - {x: -501, y: 363}
+      - {x: -501, y: 227}
+      - {x: -401, y: 227}
+      - {x: -395, y: 253}
+      - {x: -395, y: 355}
+      - {x: -411, y: 363}
+    - - {x: -412, y: 512}
+      - {x: -471, y: 512}
+      - {x: -512, y: 460}
+      - {x: -512, y: 383}
+      - {x: -510, y: 375}
+      - {x: -493, y: 371}
+      - {x: -426, y: 371}
+      - {x: -387, y: 398}
+      - {x: -383, y: 417}
+      - {x: -383, y: 485}
+    bones: []
+    spriteID: a51aba777b97b7e46b72fc4baa1c2f03
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
