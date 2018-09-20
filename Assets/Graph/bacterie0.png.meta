@@ -88,18 +88,18 @@ TextureImporter:
       name: bacterie0_0
       rect:
         serializedVersion: 2
-        x: 668
-        y: 792
+        x: 665
+        y: 791
         width: 79
-        height: 74
-      alignment: 9
+        height: 73
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df6cb2df08bb4d64b9f1f315f381b191
+      spriteID: 15adc8c8d543cb944ae47f09475b7565
       vertices: []
       indices: 
       edges: []
