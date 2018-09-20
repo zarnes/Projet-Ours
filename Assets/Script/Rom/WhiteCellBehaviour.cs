@@ -16,6 +16,7 @@ public class WhiteCellBehaviour : MonoBehaviour
     public float RecalculationTime;
 
     public bool IsFollowingPlayer;
+    private bool _isEating = false;
 
 	// Use this for initialization
 	void Start ()
@@ -29,7 +30,10 @@ public class WhiteCellBehaviour : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (IsFollowingPlayer && Time.time > _nextCalculation)
+        if (_isEating)
+            return;
+
+        if (Time.time > _nextCalculation)
             FindNearestPlayer();
 
         if (Player == null)
@@ -107,11 +111,40 @@ public class WhiteCellBehaviour : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
+        // Kill player
+        if (collision.gameObject.tag == "Player" && !_isEating)
         {
-            Debug.Log("Kill Player");
-            Die();
+            collision.gameObject.GetComponent<PlayerController>().Speed = 0;
+            foreach(CapsuleCollider collider in collision.gameObject.GetComponents<CapsuleCollider>())
+            {
+                collider.enabled = false;
+            }
+            StartCoroutine(CorEat());
         }
+    }
+
+    private IEnumerator CorEat()
+    {
+        _isEating = true;
+
+        float originalSpeed = _agent.speed;
+        float originalAngular = _agent.angularSpeed;
+        
+        _agent.speed *= 5;
+        _agent.angularSpeed = 300;
+
+        while (_agent.remainingDistance > 0.2f)
+            yield return null;
+
+        _animator.SetTrigger("eat");
+        Player.GetComponent<DeadPlayer>().Die();
+
+        yield return new WaitForSeconds(1);
+        _animator.SetTrigger("idle");
+        _agent.speed = originalSpeed;
+        _agent.angularSpeed = originalAngular;
+
+        yield break;
     }
 
     private void OnDrawGizmosSelected()

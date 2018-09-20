@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
             moveX *= Time.deltaTime * Speed;
             moveY *= Time.deltaTime * Speed;
 
-            transform.Translate(new Vector3(moveX, moveY));
+            transform.Translate(new Vector3(moveX, 0, moveY));
         }
 	}
 }
