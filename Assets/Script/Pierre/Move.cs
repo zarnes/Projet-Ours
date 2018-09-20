@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Move : MonoBehaviour {
     float speed = 0.2f;
-    Rigidbody2D rb;
+    //Rigidbody2D rb;
 
 
     // Use this for initialization
     void Start()
     {
-        rb = this.transform.GetComponent<Rigidbody2D>();
+        //rb = this.transform.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
