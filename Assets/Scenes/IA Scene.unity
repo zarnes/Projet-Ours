@@ -494,7 +494,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!4 &929706255 stripped
 Transform:
@@ -761,7 +761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c42c697ca6f7394e9c4fb278104fde5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AutoPlay: horse
+  AutoPlay: 
   Songs:
     m_keys:
     - horse
@@ -1056,7 +1056,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4168792417722128, guid: e97231f2fe43bd2448f6653f8088b10f, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1727653525955242, guid: e97231f2fe43bd2448f6653f8088b10f, type: 2}
       propertyPath: m_StaticEditorFlags
