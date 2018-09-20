@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Quit : MonoBehaviour {
 
-	// Update is called once per frame
+	// Quand le joueur appuie sur échap, le jeu se ferme
 	void Update () {
 			if (Input.GetKey ("escape")) {
 				Application.Quit();

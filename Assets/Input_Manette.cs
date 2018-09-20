@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class collision : MonoBehaviour {
+public class Input_Manette : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,4 +13,5 @@ public class collision : MonoBehaviour {
 	void Update () {
 		
 	}
+
 }

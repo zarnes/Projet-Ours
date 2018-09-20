@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour {
 
+    /// Quand appelé, la méthode charge la scene voulue (fournir le nom de la scène au script)
 	public void LoadScene (string Scene)
 	{
 		SceneManager.LoadScene(Scene);
