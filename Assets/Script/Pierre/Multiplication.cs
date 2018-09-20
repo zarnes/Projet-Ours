@@ -6,9 +6,11 @@ public class multiplication : MonoBehaviour {
     GameObject playerClone;
     GameObject player;
     GameObject[] playerTab;
+    GameObject playerClonePosition;
     // Use this for initialization
     void Start () {
         player = GameObject.Find("player1");
+        playerClonePosition = GameObject.Find("playerClonePosition");
 	}
 	
 	// Update is called once per frame
@@ -22,8 +24,8 @@ public class multiplication : MonoBehaviour {
 
             if (playerTab.Length <= 2)
             {
-                playerClone = Instantiate(player, player.transform.position, player.transform.rotation);
-                playerClone.GetComponent<Rigidbody>().velocity = player.GetComponent<Rigidbody2D>().velocity;
+                playerClone = Instantiate(player, playerClonePosition.transform.position, playerClonePosition.transform.rotation);
+                playerClone.GetComponent<Rigidbody>().velocity = player.GetComponent<Rigidbody>().velocity;
                 Debug.Log("Multiplication");
             }
             
