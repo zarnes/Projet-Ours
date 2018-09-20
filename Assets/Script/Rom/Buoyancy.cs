@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Buoyancy : MonoBehaviour
 {
-    public Vector3 direction;
+    public Vector2 Direction;
     public float MinSpeed;
     public float MaxSpeed;
     public float Acceleration;
@@ -14,11 +14,12 @@ public class Buoyancy : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        Vector3 direction = new Vector3(Direction.x, Direction.y);
         List<Transform> entitiesKeys = new List<Transform>(_entities.Keys);
         foreach (Transform entityKey in entitiesKeys)
         {
             float speed = _entities[entityKey];
-
+            
             Vector3 translate = direction * speed * Time.deltaTime;
             entityKey.Translate(translate);
 
@@ -55,5 +56,11 @@ public class Buoyancy : MonoBehaviour
         }
 
         _entities.Remove(other.transform);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawLine(transform.position, transform.position + new Vector3(Direction.x, 0, Direction.y));
     }
 }
