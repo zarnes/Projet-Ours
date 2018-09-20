@@ -4,41 +4,44 @@ using UnityEngine;
 
 public class BringUpPauseMenu : MonoBehaviour {
 
-    public GameObject MenudePause;
+    public GameObject MenuPause;
     public bool StatePause = false;
-
+  
+   
     void Update()
     {
         ///Si le Joueur appuie sur échap, le jeu passe en état de pause et affiche le menu pause, si il appuie sur échap à nouveau, le menu pause disparait et le jeu reprend
-        if (Input.GetKey("escape"))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (StatePause == false)
             {
+                MenuPause.SetActive(true);
                 StatePause = true;
                 Time.timeScale = 0;
-                MenudePause.SetActive(true);
+                
+                //canvas.enabled=true;
             }
-            if (StatePause == true)
+            else if (StatePause == true)
             {
                 StatePause = false;
                 Time.timeScale = 1;
-                MenudePause.SetActive(true);
+                MenuPause.SetActive(false);
             }
         }
         ///Si le Joueur appuie sur le boutton Start, le jeu passe en état de pause et affiche le menu pause, si il appuie sur le boutton Start à nouveau, le menu pause disparait et le jeu reprend
-        if (Input.GetButton("Start"))
+        if (Input.GetButtonDown("Start"))
         {
             if (StatePause == false)
             {
                 StatePause = true;
                 Time.timeScale = 0;
-                MenudePause.SetActive(true);
+                MenuPause.SetActive(true);
             }
-            if (StatePause == true)
+            else if (StatePause == true)
             {
                 StatePause = false;
                 Time.timeScale = 1;
-                MenudePause.SetActive(true);
+                MenuPause.SetActive(false);
             }
         }
     }

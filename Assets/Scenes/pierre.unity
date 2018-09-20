@@ -553,7 +553,7 @@ GameObject:
   - component: {fileID: 1666572850}
   m_Layer: 0
   m_Name: player1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -598,7 +598,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1666572844}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a4648135b5748144a1e74ffe9b26ca9, type: 3}
   m_Name: 
@@ -626,14 +626,14 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1666572844}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6475f2a1ab7c0ae4bb70d234a1e8b2f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Acceleration: 2
-  MaxVitesse: 5
-  Friction: 2
+  Acceleration: 9
+  MaxVitesse: 15
+  Friction: 8
 --- !u!114 &1666572850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -668,7 +668,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1895697175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.75, y: -2.47, z: 0.1814479}
+  m_LocalPosition: {x: 4.02, y: -2.4, z: 0.1814479}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 393850261}

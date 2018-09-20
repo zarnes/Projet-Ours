@@ -21,21 +21,23 @@ public class Multiplication : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //Active le deuxième sprite du GameObject player1
-        if (Input.GetKeyUp(KeyCode.M) && numberOfPlayer<2) 
+        if ((Input.GetKeyUp(KeyCode.M)||Input.GetKeyUp("joystick button 1")) && numberOfPlayer<2) 
         {
             multiplication();
             numberOfPlayer = 2;
         }
 
-        if (Input.GetKeyUp(KeyCode.B)&&GameObject.Find("player1(Clone)")==null&&numberOfPlayer==2)
+        if ((Input.GetKeyUp("joystick button 0")||Input.GetKeyUp(KeyCode.B)) && GameObject.Find("player1(Clone)")==null&&numberOfPlayer==2)
         {
             pc = player2WithSprite.GetComponent<PolygonCollider2D>();
             pc.enabled = false;
             sr = player2WithSprite.GetComponent<SpriteRenderer>();
             sr.enabled = false;
             playerClone = Instantiate(player1, player2WithSprite.transform.position, player2WithSprite.transform.rotation);
+            playerClone.GetComponent<Rigidbody2D>().velocity = player1.GetComponent<Rigidbody2D>().velocity;
+            
         }
-        else if(Input.GetKeyUp(KeyCode.B) && GameObject.Find("player1(Clone)") != null)
+        else if((Input.GetKeyUp("joystick button 0")||Input.GetKeyUp(KeyCode.B))&& GameObject.Find("player1(Clone)") != null)
         {
            
             float distance = Vector3.Distance(playerClone.transform.position, player1.transform.position);
