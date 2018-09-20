@@ -67,10 +67,13 @@ public class CamController : MonoBehaviour
         Vector3 centerPoint = _bounds.center;
         Vector3 newPosition = centerPoint + Offset;
 
-        float x = Mathf.Clamp(newPosition.x, BottomRightLimit.x, TopLeftLimit.x);
-        float z = Mathf.Clamp(newPosition.z, BottomRightLimit.y, TopLeftLimit.y);
-        newPosition = new Vector3(x, newPosition.y, z);
-
+        if (TopLeftLimit != BottomRightLimit)
+        {
+            float x = Mathf.Clamp(newPosition.x, BottomRightLimit.x, TopLeftLimit.x);
+            float z = Mathf.Clamp(newPosition.z, BottomRightLimit.y, TopLeftLimit.y);
+            newPosition = new Vector3(x, newPosition.y, z);
+        }
+        
         transform.position = Vector3.SmoothDamp(transform.position, newPosition, ref _velocity, SmoothTime);
     }
 
