@@ -35,10 +35,10 @@ public class CamController : MonoBehaviour
     private void Zoom()
     {
         float dist = (float) Math.Sqrt(_bounds.size.x * _bounds.size.x + _bounds.size.z * _bounds.size.z);
-        Debug.Log(dist);
+        //Debug.Log(dist);
         dist = Mathf.Clamp(dist, minSize, maxSize);
         float newZoom = Mathf.Lerp(minSize, maxSize, dist / ZoomMultiplier);
-        Debug.Log(newZoom);
+        //Debug.Log(newZoom);
         _camera.orthographicSize = newZoom;
     }
 
