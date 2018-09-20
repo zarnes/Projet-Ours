@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class DeathScript : MonoBehaviour
 {
-
+/*
 
     public GameObject[] Gameobjects;
     public GameObject MenuDeFin;
@@ -37,7 +37,7 @@ public class DeathScript : MonoBehaviour
             StateOver = true;
             MenuDeFin.SetActive(true);
         }
-    }
+    }*/
 
     
 }
