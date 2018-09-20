@@ -1,39 +1,41 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DeadPlayer : MonoBehaviour {
-
+public class DeadPlayer : MonoBehaviour
+{
     public GameObject mortSprite;
-	// Use this for initialization
-	void Start () {
-        
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    private Animator _animator;
+
+    private void Start()
+    {
+        _animator = GetComponent<Animator>();
+    }
 
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Enemi")
-        {
-            
-            //Instantiate(mortSprite);
-            SceneManager.LoadScene("level1");
-            Destroy(gameObject);
+            Die();
+        else if (collision.gameObject.tag == "DeadZone")
+            Die();
+    }
 
-        }
-        if (collision.gameObject.tag == "DeadZone")
-        {
+    internal void Die()
+    {
+        StartCoroutine(CorDie());
+    }
 
-            //Instantiate(mortSprite);
-            SceneManager.LoadScene("level1");
-            Destroy(gameObject);
+    private IEnumerator CorDie()
+    {
+        _animator.SetTrigger("death");
 
-        }
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
+        // TODO check if last player
+        //SceneManager.LoadScene("level1");
     }
 
     private void OnParticleCollision(GameObject other)
