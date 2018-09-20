@@ -5,9 +5,15 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float Speed;
-	
-	// Update is called once per frame
-	void Update ()
+    private float originY;
+
+    private void Start()
+    {
+        originY = transform.position.y;
+    }
+
+    // Update is called once per frame
+    void Update ()
     {
         float moveX = Input.GetAxis("Horizontal");
         float moveY = Input.GetAxis("Vertical");
@@ -18,6 +24,7 @@ public class PlayerController : MonoBehaviour
             moveY *= Time.deltaTime * Speed;
 
             transform.Translate(new Vector3(moveX, 0, moveY));
+            transform.position = new Vector3(transform.position.x, originY, transform.position.z);
         }
 	}
 }

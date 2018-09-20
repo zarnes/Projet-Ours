@@ -62,14 +62,12 @@ public class WhiteCellBehaviour : MonoBehaviour
         }
         // If too far, abandon player
         else if (distance > AbandonDistance && IsFollowingPlayer)
-        {
             Stop();
-        }
         
         if (IsFollowingPlayer && Time.time > _nextCalculation)
         {
             FollowPlayer();
-
+            
             // If the ennemy is not visible anymore, abandon player
             if (distance < AbandonDistance && Physics.Raycast(transform.position, direction, out hit, distance))
             {
@@ -109,18 +107,37 @@ public class WhiteCellBehaviour : MonoBehaviour
         }
     }
 
+    private void OnParticleCollision(GameObject other)
+    {
+        Collision(other);
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        Collision(collision.gameObject);
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
+        Collision(collision.gameObject);
+    }
+
+    private void Collision(GameObject go)
+    {
         // Kill player
-        if (collision.gameObject.tag == "Player" && !_isEating)
+        if (go.tag == "Player" && !_isEating)
         {
-            collision.gameObject.GetComponent<PlayerController>().Speed = 0;
-            foreach(CapsuleCollider collider in collision.gameObject.GetComponents<CapsuleCollider>())
+            go.GetComponent<PlayerController>().Speed = 0;
+            foreach (CapsuleCollider collider in go.GetComponents<CapsuleCollider>())
             {
                 collider.enabled = false;
             }
             StartCoroutine(CorEat());
         }
+        else if (go.tag == "Enemi")
+            Die();
+        else if (go.tag == "DeadZone")
+            Die();
     }
 
     private IEnumerator CorEat()
@@ -143,6 +160,9 @@ public class WhiteCellBehaviour : MonoBehaviour
         _animator.SetTrigger("idle");
         _agent.speed = originalSpeed;
         _agent.angularSpeed = originalAngular;
+
+        IsFollowingPlayer = false;
+        _isEating = false;
 
         yield break;
     }
