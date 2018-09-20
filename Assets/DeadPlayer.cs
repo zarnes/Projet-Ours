@@ -35,4 +35,16 @@ public class DeadPlayer : MonoBehaviour {
 
         }
     }
+
+    private void OnParticleCollision(GameObject other)
+    {
+        if (other.gameObject.tag == "DeadZone")
+        {
+
+            //Instantiate(mortSprite);
+            SceneManager.LoadScene("level1");
+            Destroy(gameObject);
+
+        }
+    }
 }
