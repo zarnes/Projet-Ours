@@ -10,7 +10,7 @@ public class Buoyancy : MonoBehaviour
     public float Acceleration;
 
     private Dictionary<Transform, float> _entities = new Dictionary<Transform, float>();
-    	
+    
 	// Update is called once per frame
 	void Update ()
     {
@@ -34,6 +34,7 @@ public class Buoyancy : MonoBehaviour
         }
 	}
     
+    //private void OnColliderEnter(Collision other)
     private void OnTriggerEnter(Collider other)
     {
         // If already exist
@@ -46,6 +47,7 @@ public class Buoyancy : MonoBehaviour
         _entities.Add(other.transform, MinSpeed);
     }
 
+    //private void OnColliderExit(Collision other)
     private void OnTriggerExit(Collider other)
     {
         // If object not found
