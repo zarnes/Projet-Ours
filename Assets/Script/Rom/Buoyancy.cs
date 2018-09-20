@@ -4,21 +4,22 @@ using UnityEngine;
 
 public class Buoyancy : MonoBehaviour
 {
-    public Vector3 direction;
+    public Vector2 Direction;
     public float MinSpeed;
     public float MaxSpeed;
     public float Acceleration;
 
     private Dictionary<Transform, float> _entities = new Dictionary<Transform, float>();
-    	
+    
 	// Update is called once per frame
 	void Update ()
     {
+        Vector3 direction = new Vector3(Direction.x, Direction.y);
         List<Transform> entitiesKeys = new List<Transform>(_entities.Keys);
         foreach (Transform entityKey in entitiesKeys)
         {
             float speed = _entities[entityKey];
-
+            
             Vector3 translate = direction * speed * Time.deltaTime;
             entityKey.Translate(translate);
 
@@ -33,6 +34,7 @@ public class Buoyancy : MonoBehaviour
         }
 	}
     
+    //private void OnColliderEnter(Collision other)
     private void OnTriggerEnter(Collider other)
     {
         // If already exist
@@ -45,6 +47,7 @@ public class Buoyancy : MonoBehaviour
         _entities.Add(other.transform, MinSpeed);
     }
 
+    //private void OnColliderExit(Collision other)
     private void OnTriggerExit(Collider other)
     {
         // If object not found
@@ -55,5 +58,11 @@ public class Buoyancy : MonoBehaviour
         }
 
         _entities.Remove(other.transform);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawLine(transform.position, transform.position + new Vector3(Direction.x, 0, Direction.y));
     }
 }

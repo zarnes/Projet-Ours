@@ -34,6 +34,7 @@ public class WhiteCellBehaviour : MonoBehaviour
         // If close enough, check raycast then follow player
         if (distance < AggroDistance && !IsFollowingPlayer)
         {
+            Debug.DrawRay(transform.position, direction, Color.red);
             if (Physics.Raycast(transform.position, direction, out hit, distance))
             {
                 if (hit.transform.tag == "Player")

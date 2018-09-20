@@ -8,17 +8,17 @@ public class Player_Controller : MonoBehaviour {
     public float MaxVitesse;
     public float Friction;
 
-    private Rigidbody2D Rb;
+    private Rigidbody Rb;
 
     // Use this for initialization
     void Start () {
-        Rb = GetComponent<Rigidbody2D>();
+        Rb = GetComponent<Rigidbody>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-        Vector2 inputValue = new Vector2(-Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        if(inputValue != Vector2.zero)
+        Vector3 inputValue = new Vector3(-Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        if(inputValue != Vector3.zero)
         {
             Rb.velocity += inputValue.normalized * Acceleration * Time.deltaTime;
             if(Rb.velocity.magnitude > MaxVitesse)
@@ -26,13 +26,13 @@ public class Player_Controller : MonoBehaviour {
                 Rb.velocity = Rb.velocity.normalized * MaxVitesse;
             }
         }
-        else if (Rb.velocity != Vector2.zero)
+        else if (Rb.velocity != Vector3.zero)
         {
             if (Rb.velocity.magnitude > Friction * Time.deltaTime)
                 Rb.velocity -= Rb.velocity.normalized * Friction * Time.deltaTime;
             else
             {
-                Rb.velocity = Vector2.zero;
+                Rb.velocity = Vector3.zero;
             }
         }
 
